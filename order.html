@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สั่งซื้อสินค้า — Body Scent</title>
+  <meta name="description" content="สั่งซื้อน้ำหอมฉีดตัวและโรลออน Body Scent">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html">Body Scent</a>
+      <nav class="nav" aria-label="เมนูหลัก">
+        <a href="index.html#moods">กลิ่นของเรา</a>
+        <a href="product.html">สินค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="page-header">
+      <div class="container">
+        <h1>สั่งซื้อสินค้า</h1>
+        <span class="rule" aria-hidden="true"></span>
+        <p class="lead">ตรวจสอบรายการและยอดรวมด้านล่าง แล้วกรอกข้อมูลติดต่อของคุณ</p>
+      </div>
+    </div>
+
+    <section class="section section--form">
+      <div class="container container--narrow">
+
+        <form id="orderForm" class="order-form">
+
+          <div class="field">
+            <label for="customerName">ชื่อลูกค้า</label>
+            <input class="input" type="text" id="customerName" name="customerName" autocomplete="name" required>
+          </div>
+
+          <div class="field">
+            <label for="contact">เบอร์โทร / Line</label>
+            <input class="input" type="text" id="contact" name="contact" autocomplete="off" required>
+          </div>
+
+          <div class="field">
+            <label for="items">รายการสินค้า</label>
+            <textarea class="textarea textarea--short" id="items" name="items" rows="2" required></textarea>
+          </div>
+
+          <div class="field">
+            <label for="total">จำนวนเงินรวม (บาท)</label>
+            <input class="input" type="number" id="total" name="total" min="0" step="any" inputmode="decimal" required>
+          </div>
+
+          <div class="field">
+            <label for="note">หมายเหตุ<span class="field__optional">ไม่บังคับ</span></label>
+            <textarea class="textarea" id="note" name="note" rows="3"></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn btn--solid btn--block" type="submit">ยืนยันสั่งซื้อ</button>
+            <p class="form-aside"><a class="link-line" href="product.html">เลือกสินค้าเพิ่ม</a></p>
+          </div>
+
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <a class="logo" href="index.html">Body Scent</a>
+      <nav class="nav" aria-label="เมนูท้ายหน้า">
+        <a href="index.html#moods">กลิ่นของเรา</a>
+        <a href="product.html">สินค้า</a>
+      </nav>
+      <small>&copy; 2026 Body Scent</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
